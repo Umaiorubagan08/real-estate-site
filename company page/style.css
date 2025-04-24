@@ -10,6 +10,23 @@ body {
   color: #111;
 }
 
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+a:hover {
+  background-color: #005fa3;
+}
+
 .topbar {
   background: white;
   padding: 10px 15px;
