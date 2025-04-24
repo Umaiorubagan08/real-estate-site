@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f3f4f6;
+    color: #111;
+    overflow: hidden;
+  }
+  
+  .topbar {
+    background: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .welcome-heading {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin: 5px 0px;
+    font-weight: bolder;
+  }
+  
+  .section {
+    padding: 10px 15px;
+  }
+  
+  .section h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .section h2:hover {
+   color: darkcyan;
+  }
+  
+
+  .model-boxes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .model-box {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    text-align: center;
+    flex: 1 1 45%;
+    font-size: 14px;
+  }
+  
+  .model-box img {
+    width: 40%;
+    height: auto;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 5px;
+  }
+
+
+  .image-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .image-item {
+    width: 150px;
+    text-align: center;
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .image-item small {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #555;
+  }
+  
+  
+  .chatbot-icon {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 15px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .chat-header {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .chat-log {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+  }
+  
+  .chat-inputs {
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+  
+  .chat-inputs input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .chat-inputs button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  
+  .message {
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 70%;
+    line-height: 1.4;
+  }
+  
+  .user-message {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+  }
+  
+  .bot-message {
+    background-color: #ececec;
+    align-self: flex-start;
+  }
+  
+
+
+#payment_h2 {
+    margin-left: 10px; 
+}
+  
+.payment-section {
+  margin-top: 3px;
+  padding: 2px;
+}
+
+.payment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payment-table th,
+.payment-table td {
+  padding: 1px;
+  border: 2px solid #ddd;
+  text-align: center;
+}
+
+.payment-table th {
+  font-weight: bold;
+}
+
+
+.ar-placeholder-box {
+  width: 150px;
+  height: 150px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ar-placeholder-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.ar-placeholder-box small {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.ar-placeholder-box p {
+  font-size: 14px;
+  color: #000;
+}
+
+
+
+.btn-yes {
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.btn-no {
+  background-color: #f44336; 
+  color: white;
+  border: none;
+  padding: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-yes:hover {
+  background-color: #45a049;
+}
+
+.btn-no:hover {
+  background-color: #e53935;
+}
+
+
+
+/* responsive design */
+
+@media (max-width: 1024px) {
+  .model-box {
+    flex: 1 1 48%;
+  }
+
+  .image-item {
+    width: 120px;
+  }
+
+  .chat-popup {
+    width: 280px;
+    height: 380px;
+  }
+
+  .chat-header {
+    font-size: 15px;
+  }
+
+  .chat-inputs input {
+    font-size: 13px;
+  }
+
+  .chat-inputs button {
+    font-size: 15px;
+  }
+
+  .welcome-heading {
+    font-size: 18px;
+  }
+
+  .topbar {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .welcome-heading {
+    font-size: 16px;
+  }
+
+  .model-boxes {
+    flex-direction: column;
+  }
+
+  .model-box {
+    width: 100%;
+    flex: none;
+  }
+
+  .image-grid {
+    justify-content: center;
+  }
+
+  .image-item {
+    width: 100px;
+  }
+
+  .chat-popup {
+    width: 90%;
+    height: 360px;
+    bottom: 60px;
+  }
+
+  .chat-inputs input {
+    font-size: 12px;
+  }
+
+  .chat-inputs button {
+    font-size: 14px;
+  }
+
+  .payment-table th,
+  .payment-table td {
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .ar-placeholder-box {
+    width: 120px;
+    height: auto;
+  }
+
+  .ar-placeholder-box img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ar-placeholder-box p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .welcome-heading {
+    font-size: 14px;
+  }
+
+  .section h2 {
+    font-size: 14px;
+  }
+
+  .model-box {
+    font-size: 13px;
+  }
+
+  .chat-popup {
+    width: 95%;
+    height: 340px;
+    bottom: 60px;
+  }
+
+  .chat-header {
+    font-size: 14px;
+  }
+
+  .chat-inputs input {
+    font-size: 12px;
+  }
+
+  .chat-inputs button {
+    font-size: 13px;
+  }
+
+  .image-item {
+    width: 90px;
+  }
+
+  .image-item small {
+    font-size: 11px;
+  }
+
+  .payment-table th,
+  .payment-table td {
+    font-size: 11px;
+  }
+
+  .btn-yes, .btn-no {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+}
